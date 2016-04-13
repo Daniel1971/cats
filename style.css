@@ -106,7 +106,15 @@ h1 {
     text-decoration: none;
     color: black;
     margin: 20px;
-    background-color: red;
     padding: 10px;
     border-radius: 50%;
+    box-shadow: 5px 5px;
+}
+
+#menu ul li a:hover {
+    color: white;
+}
+
+li a.active {
+    background-color: greenyellow;
 }
