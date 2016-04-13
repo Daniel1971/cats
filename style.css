@@ -27,6 +27,7 @@ header {
     border-right: 1px solid black;
     background-color: khaki;
     border-bottom: 1px solid black;
+    border-radius: 10px;
 }
 
 nav {
@@ -39,6 +40,7 @@ nav {
     background-color: khaki;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 #sidebar1 {
@@ -50,6 +52,7 @@ nav {
     margin-right: 20px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    border-radius: 10px;
 
 }
 
@@ -58,6 +61,7 @@ main {
     height: 450px;
     background-color: khaki;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 #sidebar2 {
@@ -69,6 +73,7 @@ main {
     margin-left: 20px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    border-radius: 10px;
 }
 
 footer {
@@ -80,6 +85,7 @@ footer {
     border-right: 1px solid black;
     background-color: khaki;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 h1 {
