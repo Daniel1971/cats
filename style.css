@@ -164,6 +164,7 @@ header img {
 
 article {
     padding: 10px;
+    text-align: justify;
 }
 
 audio {
