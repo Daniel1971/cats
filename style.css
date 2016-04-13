@@ -86,3 +86,21 @@ h1 {
     font-size: 3em;
     font-family: Chalkboard;
 }
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    display: inline;
+
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 50%;
+}
