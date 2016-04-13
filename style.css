@@ -6,6 +6,10 @@ html {
     font-size: 100%;
 }
 
+body {
+    background: url("fabric_1/fabric_1_@2X.png");
+}
+
 #wrapper {
     width: 80%;
     height: 700px;
