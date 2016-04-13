@@ -28,6 +28,9 @@ header {
     background-color: khaki;
     border-bottom: 1px solid black;
     border-radius: 10px;
+    background: linear-gradient(black, blue, orange);
+    color: white;
+    position: relative;
 }
 
 nav {
@@ -37,10 +40,10 @@ nav {
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    background-color: khaki;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    background: radial-gradient(blue, orange, black);
 }
 
 #sidebar1 {
@@ -53,15 +56,22 @@ nav {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-radius: 10px;
+    text-align: center;
+    line-height: 450px;
+    vertical-align: middle;
+    background: linear-gradient(to bottom right, blue, orange);
+    color: white;
 
 }
 
 main {
-    flex: 4;
+    flex: 1;
     height: 450px;
     background-color: khaki;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: khaki;
+    color: black;
 }
 
 #sidebar2 {
@@ -74,6 +84,11 @@ main {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-radius: 10px;
+    text-align: center;
+    line-height: 450px;
+    vertical-align: middle;
+    background: linear-gradient(to bottom left, blue, orange);
+    color: white;
 }
 
 footer {
@@ -86,6 +101,12 @@ footer {
     background-color: khaki;
     margin-top: 10px;
     border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    background: linear-gradient(orange, blue, black);
+    color: white;
+
 }
 
 h1 {
@@ -102,17 +123,14 @@ h1 {
 
 #menu ul li {
     display: inline;
-    border: 1px solid black;
     width: 100px;
-    box-shadow: 5px 5px;
-    border-radius: 50%;         /* evtl. 5px und dann border-radius bei li a.active streichen */
+   /* border-radius: 50%;    */     /* evtl. 5px und dann border-radius bei li a.active streichen */
     text-align: center;
 
 }
 
 #menu ul li a {
     text-decoration: none;
-    color: white;
     display: block;
 }
 
@@ -122,22 +140,32 @@ h1 {
 
 li a.active {
     background-color: orange;
-    border-radius: 50%;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px 5px;
 }
 
-lic {
-    background-color: burlywood;
-}
 
-li:not(active) {
-    background-color: red;
+
+li:not(active) a{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px 5px;
 }
 
 header img {
     float: left;
     padding: 20px;
+    top: 5px;
+    left: 30px;
+    position: absolute;
 }
 
 article {
     padding: 10px;
+}
+
+audio {
+    visibility: hidden;
 }
