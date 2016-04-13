@@ -27,6 +27,7 @@ header {
     border-left: 1px solid black;
     border-right: 1px solid black;
     background-color: khaki;
+    border-bottom: 1px solid black;
 }
 
 nav {
@@ -37,6 +38,8 @@ nav {
     border-left: 1px solid black;
     border-right: 1px solid black;
     background-color: khaki;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #sidebar1 {
@@ -45,12 +48,17 @@ nav {
     border-right: 1px solid black;
     border-left: 1px solid black;
     background-color: khaki;
+    margin-right: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
 }
 
 main {
-    flex: 2;
+    flex: 4;
     height: 450px;
     background-color: khaki;
+    border: 1px solid black;
 }
 
 #sidebar2 {
@@ -59,6 +67,9 @@ main {
     border-left: 1px solid black;
     border-right: 1px solid black;
     background-color: khaki;
+    margin-left: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 footer {
@@ -69,6 +80,7 @@ footer {
     border-left: 1px solid black;
     border-right: 1px solid black;
     background-color: khaki;
+    margin-top: 10px;
 }
 
 h1 {
