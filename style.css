@@ -95,26 +95,49 @@ h1 {
 
 #menu ul {
     list-style-type: none;
+    -webkit-padding-start: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 #menu ul li {
     display: inline;
+    border: 1px solid black;
+    width: 100px;
+    box-shadow: 5px 5px;
+    border-radius: 50%;         /* evtl. 5px und dann border-radius bei li a.active streichen */
+    text-align: center;
 
 }
 
 #menu ul li a {
     text-decoration: none;
-    color: black;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 5px 5px;
+    color: white;
+    display: block;
 }
 
 #menu ul li a:hover {
-    color: white;
+    color: yellow;
 }
 
 li a.active {
-    background-color: greenyellow;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+lic {
+    background-color: burlywood;
+}
+
+li:not(active) {
+    background-color: red;
+}
+
+header img {
+    float: left;
+    padding: 20px;
+}
+
+article {
+    padding: 10px;
 }
