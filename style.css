@@ -13,7 +13,6 @@ body {
 #wrapper {
     width: 80%;
     height: 700px;
-    background-color: gold;
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
