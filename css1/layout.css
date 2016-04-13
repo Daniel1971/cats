@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background: url("fabric_1/fabric_1_@2X.png");
+    background: url("../../fabric_1/fabric_1_@2X.png");
 }
 
 #wrapper {
@@ -125,7 +125,7 @@ h1 {
 #menu ul li {
     display: inline;
     width: 100px;
-   /* border-radius: 50%;    */     /* evtl. 5px und dann border-radius bei li a.active streichen */
+    /* border-radius: 50%;    */     /* evtl. 5px und dann border-radius bei li a.active streichen */
     text-align: center;
 
 }
