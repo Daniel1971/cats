@@ -1,0 +1,19 @@
+{
+  "bilder": [
+    {
+      "id": 1,
+      "label": "Kartaeuser",
+      "imgpath": "bilder/kartaeuser.jpg"
+    },
+    {
+      "id": 2,
+      "label": "Perser",
+      "imgpath": "bilder/perser.jpg"
+    },
+    {
+      "id": 3,
+      "label": "Siamkatze",
+      "impath": "bilder/siamkatze.jpg"
+    }
+  ]
+}
