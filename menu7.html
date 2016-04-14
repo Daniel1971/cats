@@ -88,8 +88,26 @@
 
     <script src="jquery-1.12.3.min.js" type="text/javascript"></script>
 
+    <script>
+        $(document).ready(function(e) {
+            showViewportSize();
+        });
+        $(window).resize(function(e) {
+            showViewportSize();
+        });
+        function showViewportSize() {
+            var the_width = $(window).width();
+            $('#width').text(the_width);
+        }
+    </script>
 
-    <footer role="contentinfo">Footer</footer>
+
+    <footer role="contentinfo">
+
+        <p class="showme">Der Viewport ist <span id="width"></span>px breit.</p>
+
+
+    </footer>
 
 </div>
 

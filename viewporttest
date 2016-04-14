@@ -1,0 +1,12 @@
+<script>
+        $(document).ready(function(e) {
+            showViewportSize();
+        });
+        $(window).resize(function(e) {
+            showViewportSize();
+        });
+        function showViewportSize() {
+            var the_width = $(window).width();
+            $('#width').text(the_width);
+        }
+    </script>
