@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Cats</title>
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Permanent+Marker' type='text/css'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Ranchers&subset=latin,latin-ext' type='text/css'>
+    <link rel="stylesheet" href="normalize.css-master/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css1/styles.css" type="text/css">
+
+</head>
+<body>
+
+<div id="wrapper">
+
+    <header role="presentation">
+
+        <div id="headerbild">
+            <img src="bilder/logo.png" alt="Logo der Seite" title="Logo der Seite">
+        </div>
+
+        <h1>Cats</h1>
+
+    </header>
+
+    <nav id="menu" role="navigation">
+
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu1.html">Menü 1</a></li>
+            <li><a href="menu2.html">Menü 2</a></li>
+            <li><a href="menu3.html">Menü 3</a></li>
+            <li><a href="menu4.html">Menü 4</a></li>
+            <li><a href="menu5.html">Menü 5</a></li>
+            <li><a href="menu6.html">Menü 6</a></li>
+            <li><a href="menu7.html">Menü 7</a></li>
+            <li><a href="menu8.html">Menü 8</a></li>
+        </ul>
+
+    </nav>
+
+    <aside id="sidebar1" role="complementary">
+
+        <div class="panel">
+
+            <h2><a href="#">Berühmte Katzen</a></h2>
+
+            <h2><a href="#">Pflegetipps</a></h2>
+
+        </div>
+        <div class="panel">
+
+            <h2><a href="#">Katzensprache</a></h2>
+
+            <h2><a href="#">Rassen</a></h2>
+
+        </div>
+        <div class="panel">
+
+            <h2>Slider</h2>
+
+            <button id="button1">Bildausgabe</button>
+
+        </div>
+
+    </aside>
+
+    <main role="main">
+
+        <article>
+
+
+
+
+            <section>
+
+                <h2>Langhaarige Rassen</h2>
+
+
+                <button id="bild48"><a href="">Perserkatze</a></button>
+
+
+            </section>
+
+            <br>
+
+
+            <ul class="pagination">
+                <li><a href="#"><<</a></li>
+                <li><a href="index.html">1</a></li>
+                <li><a href="rasse2.html">2</a></li>
+                <li><a href="rasse3.html">3</a></li>
+                <li><a class="active" href="rasse4.html">4</a></li>
+                <li><a href="rasse5.html">5</a></li>
+                <li><a href="#">>></a></li>
+            </ul>
+
+
+        </article>
+
+    </main>
+
+    <aside id="sidebar2" role="complementary">
+
+
+        <div id="bildausgabe">
+            <ul id="sprungziel"></ul>
+
+            <!-- <img src="bilder/europaeisch_kurzhaar.jpg" alt="" title=""> -->
+
+            <!--
+            California Spangled fehlt noch!
+            <br>
+            <br>
+            <br>
+            Balinese fehlt noch!
+            Shorthaired Manx fehlt noch!
+            Japanische Stummelschwanzkatze fehlt noch
+            Munchkin Shorthair fehlt noch!
+            <br>
+            <br>
+
+            -->
+
+
+
+        </div>
+
+
+        <audio src="http://www.jung-pn.de/audio/sound/tiere/katze_5.wav" controls ></audio> <!-- autoplay -->
+
+    </aside>
+
+
+    <script src="jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script4.js"></script>
+
+    <script>
+        $(document).ready(function(e) {
+            showViewportSize();
+        });
+        $(window).resize(function(e) {
+            showViewportSize();
+        });
+        function showViewportSize() {
+            var the_width = $(window).width();
+            $('#width').text(the_width);
+        }
+    </script>
+
+    <footer role="contentinfo">
+
+        <p class="showme">Der Viewport ist <span id="width"></span>px breit.</p>
+
+    </footer>
+
+</div>
+
+</body>
+</html>
