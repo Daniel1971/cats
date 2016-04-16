@@ -1,0 +1,23 @@
+header {
+    flex: 1 100%;
+    height: 100px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: khaki;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(black, blue, orange);
+    color: white;
+    position: relative;
+}
+
+header img {
+    float: left;
+    padding: 20px;
+    top: 5px;
+    left: 30px;
+    position: absolute;
+    border: none;
+}

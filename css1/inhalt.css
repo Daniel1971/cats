@@ -1,0 +1,91 @@
+main {
+    flex: 1;
+    height: 450px;
+    background-color: khaki;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: khaki;
+    color: black;
+    overflow: scroll;
+    width: 100%;
+}
+
+article {
+    padding: 10px;
+    text-align: justify;
+}
+
+button {
+    display: block;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    outline-color: black;
+    margin: 0 auto;
+    padding: 5px;
+
+
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+section h2 {
+    text-align: center;
+}
+
+ul.pagination {
+    display: inline-block;
+    justify-content: space-around;
+
+}
+
+ul.pagination li{
+    display: inline;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    -webkit-padding-start: 0px;
+}
+
+ul.pagination li a {
+    color: orange;
+    float: left;
+    padding: 3px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ul.pagination li a.active {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+}
+
+u.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+#platzierung {
+    display: flex;
+    margin: 0 auto;
+}
+
+button a:visited {
+    color: black;
+}
+
+button a:hover,
+button a:focus {
+    color: red;
+}
+
+button a:active {
+    color: teal;
+    background-color: yellow;
+    outline: none;
+}
+

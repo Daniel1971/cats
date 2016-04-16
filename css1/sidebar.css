@@ -1,0 +1,67 @@
+#sidebar1 {
+    flex: 1;
+    height: 450px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: khaki;
+    margin-right: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom right, blue, orange);
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#sidebar2 {
+    flex: 1;
+    height: 450px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: khaki;
+    margin-left: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 450px;
+    vertical-align: middle;
+    background: linear-gradient(to bottom left, blue, orange);
+    color: white;
+    position: relative;
+}
+
+.panel {
+    height: 100px;
+    flex: 1;
+    background-color: lightgrey;
+    margin: 10px;
+    color: black;
+    opacity: 0.5;
+    color: red;
+    border-radius: 50%;
+
+}
+
+.panel a {
+    text-decoration: none;
+    color: red;
+}
+
+#sprungziel {
+    background-color: yellow;
+    list-style-type: none;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    align-self: center;
+
+}
+
+#bildausgabe {
+    height: 300px;
+    display: flex;
+}

@@ -1,0 +1,50 @@
+nav {
+    flex: 1 100%;
+    height: 50px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: radial-gradient(blue, orange, black);
+}
+
+#menu ul {
+    list-style-type: none;
+    -webkit-padding-start: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu ul li {
+    display: inline;
+    width: 100px;
+    /* border-radius: 50%;    */     /* evtl. 5px und dann border-radius bei li a.active streichen */
+    text-align: center;
+
+}
+
+#menu ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+#menu ul li a:hover {
+    color: yellow;
+}
+
+li a.active {
+    background-color: orange;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px 5px;
+}
+
+li:not(active) a{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px 5px;
+}
