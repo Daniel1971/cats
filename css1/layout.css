@@ -24,6 +24,7 @@ html {
 
 body {
     background: url("../fabric_1/fabric_1_@2X.png");
+    display: flex;
 }
 
 h1 {

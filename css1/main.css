@@ -75,6 +75,10 @@ u.pagination li a:hover:not(.active) {
     align-content: center;
 }
 
+button a:link {
+
+}
+
 button a:visited {
     color: black;
 }
