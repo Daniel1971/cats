@@ -48,3 +48,14 @@ li:not(active) a{
     border: 1px solid white;
     border-radius: 5px 5px;
 }
+
+li#homelink a:before {
+    content: '\f409';
+    font-family: Genericons;
+    color: black;
+    font-size: 16px;
+    float: left;
+    padding-top: 1.5px;
+    padding-left: 3px;
+
+}
