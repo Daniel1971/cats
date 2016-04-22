@@ -311,22 +311,6 @@ $(document).ready(function() {
 
 
 
-        /* $(this).append("<div class='weiss'>Hier sollte der Text stehen!</div>"); */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -334,13 +318,8 @@ $(document).ready(function() {
     bildausgabe();
 
 
-    /*$("span.genericon.genericon-uparrow").on("click", function () {
-        alert("Arsch!");
-    }); */
 
-    $("span.genericon.genericon-uparrow").on("click", function () {
-       alert ("Arsch!");
-    });
+
 
 
 });
