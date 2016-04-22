@@ -19,7 +19,8 @@ $(document).ready(function() {
             });
 
 
-            /* Bildausgabe */
+
+            /* Bildausgabe auf Klick*/
 
             $(":button").on("click", function () {
                 switch (this.id) {
@@ -27,7 +28,7 @@ $(document).ready(function() {
                     case "bild1":
                         $("#sprungziel").empty();
                         var auswahl = '<img src= "' + json.pictures[0].url + '">';
-                        $("#sprungziel").append(auswahl);
+                        $("#sprungziel").append(auswahl).text("Drehen Sie mich!");
                         break;
                     case "bild2":
                         $("#sprungziel").empty();
@@ -333,6 +334,13 @@ $(document).ready(function() {
     bildausgabe();
 
 
+    /*$("span.genericon.genericon-uparrow").on("click", function () {
+        alert("Arsch!");
+    }); */
+
+    $("span.genericon.genericon-uparrow").on("click", function () {
+       alert ("Arsch!");
+    });
 
 
 });

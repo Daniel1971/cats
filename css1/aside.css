@@ -13,6 +13,7 @@
     color: white;
     display: flex;
     flex-direction: column;
+    width: 25%;;
 
 }
 
@@ -32,6 +33,7 @@
     background: linear-gradient(to bottom left, blue, orange);
     color: white;
     position: relative;
+    width: 25%;
 }
 
 .panel {
@@ -52,12 +54,16 @@
 }
 
 #sprungziel {
-    background-color: yellow;
+    color: yellow;
     width: 250px;
     height: 250px;
     margin: 0 auto;
-    align-self: center;
     margin-top: 100px;
+    line-height: 250px;
+    vertical-align: middle;
+    perspective: 250px;
+    font-size: 110%;
+    position: relative;
 
 }
 
@@ -65,3 +71,69 @@
     height: 300px;
     display: flex;
 }
+
+
+
+
+#sprungziel img {
+    transform: rotateY(20deg);
+}
+
+#sprungziel1 {
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+.card {
+    position: relative;
+    width: 240px; height: 240px;
+    border: 1px solid white;
+    overflow:hidden;
+}
+
+
+.card .tr-flip {
+    -webkit-transition: all 0.75s;
+    -webkit-transform-style: preserve-3d;
+}
+
+.card:hover .tr-flip {
+    -webkit-transform: rotateY(180deg);
+}
+
+.card .backSide,
+.card .frontSide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 240px; height:240px;
+    text-align:center;
+    line-height:240px;
+    -webkit-backface-visibility: hidden;
+}
+
+.card .backSide {
+    background:red;
+    -webkit-transform: rotateY(180deg);
+}
+
+.card .frontSide {
+    z-index:2;
+    /* background:grey; */
+    background: url(../bilder/highland_fold.jpg);
+}
+
+
+#überschrift {
+    width: 240px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 120px;
+    font-size: 130%;
+}
+
+
+
+
+
+

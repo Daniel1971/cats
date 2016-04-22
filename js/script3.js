@@ -1,42 +1,104 @@
 $(document).ready(function() {
 
-    /* Bildausgabe mit Text Seite 2 */
 
-    $("span.genericon.genericon-downarrow").on("click", function () {
-        $("div.weiss").remove();
-        var beschrieb = "<div class='weiss'>Hier sollte der Text stehen!</div>";
-        $(this.parentElement).append(beschrieb);
-        switch (this.parentElement) {
+    function bildausgabemitText () {
 
-            case bild29:
-                $("div.weiss").text("Die Maine Coon...");
-                break;
-            case bild30:
-                $("div.weiss").text("Die Norwegische Waldkatze...");
-                break;
-            case bild31:
-                $("div.weiss").text("Die Sibirische Katze...");
-                break;
-            case bild32:
-                $("div.weiss").text("Die Türkische Angora...");
-                break;
-            case bild33:
-                $("div.weiss").text("Die Türkische Van...");
-                break;
-            case bild34:
-                $("div.weiss").text("Die Birma...");
-                break;
-            case bild35:
-                $("div.weiss").text("Die Ragdoll...");
-                break;
-            case bild36:
-                $("div.weiss").text("Die Kurilen Bobtail...");
-                break;
-            default:
-                alert("Dieses Tier gibt es nicht");
+        var jsonURL = "data/text.json";
+        $.getJSON(jsonURL, function (json) {
+            var textList = [];
 
-        }
-    });
+            $.each(json.beschreibung, function () {
+
+                textList += this.beschreibung;
+
+
+            })
+
+
+
+
+
+
+
+            /* Bildausgabe mit Text auf Klick - Seite 2 */
+
+            $("span.genericon.genericon-downarrow").on("click", function () {
+
+                $("div.weiss").remove();
+                $(".genericon.genericon-uparrow").attr("class", "genericon genericon-downarrow");
+                var beschrieb = "<div class='weiss'>Hier sollte der Text stehen!</div>";
+                $(this.parentElement).append(beschrieb);
+                switch (this.parentElement) {
+
+                    case bild29:
+                        $("div.weiss").text(json.beschreibung[28].text);
+                        break;
+                    case bild30:
+                        $("div.weiss").text(json.beschreibung[29].text);
+                        break;
+                    case bild31:
+                        $("div.weiss").text(json.beschreibung[30].text);
+                        break;
+                    case bild32:
+                        $("div.weiss").text(json.beschreibung[31].text);
+                        break;
+                    case bild33:
+                        $("div.weiss").text(json.beschreibung[32].text);
+                        break;
+                    case bild34:
+                        $("div.weiss").text(json.beschreibung[33].text);
+                        break;
+                    case bild35:
+                        $("div.weiss").text(json.beschreibung[34].text);
+                        break;
+                    case bild36:
+                        $("div.weiss").text(json.beschreibung[35].text);
+                        break;
+                    default:
+                        alert("Dieses Tier gibt es nicht");
+
+                }
+
+
+                /* Pfeilsymbol ersetzen */
+
+                $(this).removeClass("genericon genericon-downarrow");
+                $(this).addClass("genericon genericon-uparrow");
+
+
+
+                /* Textbereich bei Klick auf Pfeilsymbol nach oben wieder schliessen */
+
+                $("span.genericon.genericon-uparrow").on("click", function () {
+                    $("div.weiss").remove();
+                    $(this).removeClass("genericon genericon-uparrow");
+                    $(this).addClass("genericon genericon-downarrow");
+                });
+
+
+
+
+            });
+
+
+
+
+
+        });
+
+
+
+    }
+
+
+    bildausgabemitText();
+
+
+
+
+
+
+
 
 
 });
