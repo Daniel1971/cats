@@ -99,6 +99,7 @@ button a:active {
 .genericon-downarrow {
     float: left;
     color: red;
+    font-family: Genericons;
     font-size: 16px;
     margin-top: 7.5px;
 }

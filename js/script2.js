@@ -138,6 +138,7 @@ $(document).ready(function() {
                     $("div.weiss").remove();
                     $(this).removeClass("genericon genericon-uparrow");
                     $(this).addClass("genericon genericon-downarrow");
+
                 });
 
 
