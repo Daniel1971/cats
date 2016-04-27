@@ -84,11 +84,11 @@
 
 }
 
-/* Bild bei Ausgabe in Ausgabeziel 3D-mässig rotieren */
-
 #sprungziel img {
     transform: rotateY(20deg);
 }
+
+/* Ende Ausgabeziel für Bilder in rechter Seitenleiste */
 
 
 

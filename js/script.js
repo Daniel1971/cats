@@ -400,13 +400,7 @@ $(document).ready(function() {
 
 
 
-        $(".card").hover(function() {
-            $(this).toggleClass(".tr-flip");
-        });
 
-        $(".card").hover(function() {
-           $(this).toggleClass(".backSide");
-        });
 
 
 

@@ -134,10 +134,6 @@ u.pagination li a:hover:not(.active) {
 /* Ende Bereich Pagination */
 
 
-
-
-
-
 /* Beginn Gestaltung Genericon-Icons */
 
 .genericon-downarrow {
@@ -198,7 +194,7 @@ u.pagination li a:hover:not(.active) {
     -webkit-backface-visibility: hidden;
 }
 .card .frontSide1 {
-    position: absolute;;
+    position: absolute;
     top: 200px; left: 0;
     width: 200px; height: 40px;
     text-align: center;
@@ -253,35 +249,6 @@ img.card {
 }
 
 /* Ende Definierung Ausgabeziel als 3D für Seite "VIPs" */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Beginn Formular auf Seite Kontakt */

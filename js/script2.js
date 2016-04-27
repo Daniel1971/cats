@@ -132,12 +132,7 @@ $(document).ready(function() {
 
 
 
-                $(":button").on("click", "span.genericon.genericon-uparrow", function (event) {
-                    $(this).removeClass("genericon genericon-uparrow");
-                    $(this).addClass("genericon genericon-downarrow");
-                    $("div.weiss").remove();
 
-                });
 
 
 
