@@ -183,7 +183,7 @@ $(document).ready(function() {
                         break;
                     case "bild32":
                         $("#sprungziel").empty();
-                        var auswahl = '<img src = "' + json.pictures[30].url + '"> alt="' + json.pictures[30].alt + '" title="' + json.pictures[30].title + '"';
+                        var auswahl = '<img src = "' + json.pictures[30].url + '" alt="' + json.pictures[30].alt + '" title="' + json.pictures[30].title + '">';
                         $("#sprungziel").append(auswahl);
                         break;
                     case "bild33":

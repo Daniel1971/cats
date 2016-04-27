@@ -17,3 +17,14 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 1222px) {
+    button {
+        width: 200px;
+    }
+
+
+
+
+
+}

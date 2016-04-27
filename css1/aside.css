@@ -2,7 +2,7 @@
 
 #sidebar1 {
     flex: 1;
-    height: 450px;
+    height: 460px;
     border-right: 1px solid black;
     border-left: 1px solid black;
     background-color: khaki;
@@ -22,7 +22,7 @@
 
 #sidebar2 {
     flex: 1;
-    height: 450px;
+    height: 460px;
     border-left: 1px solid black;
     border-right: 1px solid black;
     background-color: khaki;
@@ -53,9 +53,19 @@
     background-color: lightgrey;
     margin: 10px;
     color: black;
-    opacity: 0.5;
     color: red;
     border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0.8;
+}
+
+p a{
+    display: inline;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: gold;
 
 }
 
@@ -86,6 +96,7 @@
 
 #sprungziel img {
     transform: rotateY(20deg);
+    border: 1px solid black;
 }
 
 /* Ende Ausgabeziel für Bilder in rechter Seitenleiste */

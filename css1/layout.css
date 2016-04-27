@@ -15,7 +15,7 @@ body {
 }
 
 #wrapper {
-    width: 80%;
+    width: 90%;
     height: 700px;
     display: flex;
     flex-flow: row wrap;

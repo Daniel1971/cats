@@ -2,7 +2,7 @@
 
 main {
     flex: 1;
-    height: 450px;
+    height: 460px;
     background-color: khaki;
     border: 1px solid black;
     border-radius: 10px;
@@ -31,7 +31,12 @@ main h2 {
 
 /* Beitrag, Artikel */
 
-
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Beginn Knopfgestaltung */
 
@@ -42,7 +47,7 @@ button {
     width: 300px;
     outline-color: black;
     padding: 5px;
-    margin: 5px auto 5px auto;
+    margin: 8px auto 8px auto;
 
 
 }
@@ -78,14 +83,9 @@ button a:active {
 /* Bereich Knöpfe */
 
 section h2 {
-    text-align: center;
 }
 
 section#scroll1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 /* Ende Bereich Knöpfe */
@@ -93,30 +93,30 @@ section#scroll1 {
 
 /* Bereich Pagination */
 
-#platzierung {
-    display: flex;
-    margin: 0 auto;
-    align-content: center;
+section#scrollpag {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 ul.pagination {
-    display: inline-block;
-    justify-content: space-around;
+    -webkit-padding-start: 0px;
+    margin: 0px;
+    padding: 0px;
 
 }
 
 ul.pagination li{
     display: inline;
-    width: 10px;
-    height: 10px;
     padding: 0;
-    -webkit-padding-start: 0px;
+
 }
 
 ul.pagination li a {
     color: orange;
     float: left;
-    padding: 3px 14px;
+    padding: 6px;
+    display: block;
+    text-align: center;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -278,6 +278,12 @@ textarea:focus {
 }
 
 /* Ende Formular auf Seite Kontakt */
+
+
+
+audio {
+    display: none;
+}
 
 
 
