@@ -1,9 +1,17 @@
+/* Grundeinstellungen */
+
 * {
     box-sizing: border-box;
 }
 
 html {
     font-size: 100%;
+}
+
+body {
+    background: url("../fabric_1/fabric_1_@2X.png");
+    /* display: flex; */        /* Auswirkung bei Eventdelegation => Inhaltsbereich springt auf die linke Seite!" */
+    overflow-y: scroll;
 }
 
 #wrapper {
@@ -22,19 +30,15 @@ html {
     flex: 1 100%;
 }
 
-body {
-    background: url("../fabric_1/fabric_1_@2X.png");
-    display: flex;
-}
 
 h1 {
     font-size: 3em;
     font-family: Chalkboard;
 }
 
-img {
+/* img {
     border: 5px solid white;
-}
+} */  /* für Bilderausgabe in Sidebar separat definieren */
 
 /*
 audio {

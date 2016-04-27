@@ -22,12 +22,13 @@ $(document).ready(function() {
 
             /* Bildausgabe mit Text auf Klick - Seite 4 */
 
-            $("span.genericon.genericon-downarrow").on("click", function () {
+            $(":button").on("click", "span.genericon.genericon-downarrow", function (event) {
 
                 $("div.weiss").remove();
                 $(".genericon.genericon-uparrow").attr("class", "genericon genericon-downarrow");
                 var beschrieb = "<div class='weiss'>Hier sollte der Text stehen!</div>";
                 $(this.parentElement).append(beschrieb);
+
                 switch (this.parentElement) {
 
                     case bild48:
@@ -48,10 +49,11 @@ $(document).ready(function() {
 
                 /* Textbereich bei Klick auf Pfeilsymbol nach oben wieder schliessen */
 
-                $("span.genericon.genericon-uparrow").on("click", function () {
-                    $("div.weiss").remove();
+                $(":button").on("click", "span.genericon.genericon-uparrow", function (event) {
                     $(this).removeClass("genericon genericon-uparrow");
                     $(this).addClass("genericon genericon-downarrow");
+                    $("div.weiss").remove();
+
 
                 });
 

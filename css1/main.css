@@ -1,3 +1,5 @@
+/* Hauptbereich */
+
 main {
     flex: 1;
     height: 450px;
@@ -7,24 +9,40 @@ main {
     background-color: khaki;
     color: black;
     overflow: scroll;
-    width: 50%;
 }
 
-article {
-    padding: 10px;
-    text-align: justify;
+/* Hauptbereich auf Seite VIP's */
+
+.maingal {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: content;
 }
+
+main h2 {
+    width: 100%;
+    text-align: center;
+}
+
+/* Ende Hauptbereich auf Seite VIP's */
+
+
+/* Beitrag, Artikel */
+
+
+
+/* Beginn Knopfgestaltung */
 
 button {
     display: block;
     background-color: yellowgreen;
     border-radius: 5px;
     width: 300px;
-    text-align: center;
     outline-color: black;
-    margin: 0 auto;
     padding: 5px;
-    margin-bottom: 3px;
+    margin: 5px auto 5px auto;
 
 
 }
@@ -34,8 +52,51 @@ button a {
     color: white;
 }
 
+button a:link {
+
+}
+
+button a:visited {
+    color: black;
+}
+
+button a:hover,
+button a:focus {
+    color: red;
+}
+
+button a:active {
+    color: teal;
+    background-color: yellow;
+    outline: none;
+}
+
+
+/* Ende Knopfgestaltung */
+
+
+/* Bereich Knöpfe */
+
 section h2 {
     text-align: center;
+}
+
+section#scroll1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Ende Bereich Knöpfe */
+
+
+/* Bereich Pagination */
+
+#platzierung {
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
 }
 
 ul.pagination {
@@ -70,31 +131,14 @@ u.pagination li a:hover:not(.active) {
     background-color: #ddd;
 }
 
-#platzierung {
-    display: flex;
-    margin: 0 auto;
-    align-content: center;
-}
+/* Ende Bereich Pagination */
 
-button a:link {
 
-}
 
-button a:visited {
-    color: black;
-}
 
-button a:hover,
-button a:focus {
-    color: red;
-}
 
-button a:active {
-    color: teal;
-    background-color: yellow;
-    outline: none;
-}
 
+/* Beginn Gestaltung Genericon-Icons */
 
 .genericon-downarrow {
     float: left;
@@ -110,6 +154,11 @@ button a:active {
     font-size: 16px;
 }
 
+/* Ende Gestaltung Genericon-Icons */
+
+
+/* Ausgabebereich für Text (Details) zu einzelner Rasse */
+
 .weiss {
     background-color: white;
     margin-top: 10px;
@@ -120,10 +169,149 @@ button a:active {
 }
 
 
-.versteckt {
-    display: none;
+/* Beginn Definierung Ausgabeziel als 3D für Seite "VIPs" */
+
+.card {
+    position: relative;
+    width: 200px; height: 200px;
+    border: 1px solid white;
+    overflow:hidden;
 }
 
-.zumachen {
+
+.card .tr-flip {
+    -webkit-transition: all 0.75s;
+    -webkit-transform-style: preserve-3d;
+}
+
+.card:hover .tr-flip {
+    -webkit-transform: rotateY(180deg);
+}
+
+.card .backSide,
+.card .frontSide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 200px; height:200px;
+    /* text-align:justify; */
+    /* line-height:200px; */
+    -webkit-backface-visibility: hidden;
+}
+.card .frontSide1 {
+    position: absolute;;
+    top: 200px; left: 0;
+    width: 200px; height: 40px;
+    text-align: center;
+    line-height: 40px;
+    -webkit-backface-visibility: hidden;
+    background-color: yellow;
+}
+
+.card .backSide {
+    background: orangered;
+    -webkit-transform: rotateY(180deg);
+    height: 240px;
+}
+
+.card .frontSide {
+    z-index:2;
+    /* background:grey; */
+}
+
+.card .backSide {
+    padding: 10px;
+    overflow: scroll;
+    background-color: greenyellow;
+}
+
+div.backSide {
+    text-align: justify;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+div.frontSide1 {
+    border-top: 1px solid black;
+}
+
+#sprungziel1, #sprungziel2, #sprungziel3,
+#sprungziel4, #sprungziel5, #sprungziel6,
+#sprungziel7, #sprungziel8, #sprungziel9 {
+    background-color: greenyellow;          /* evtl. rot um den Unterschied besser hervorzuheben */
+    width: 200px;
+    height: 240px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+
+img.card {
+    min-width: 200px;
+}
+
+/* Ende Definierung Ausgabeziel als 3D für Seite "VIPs" */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Beginn Formular auf Seite Kontakt */
+
+form {
+    width: 300px;
+    background-color: #eee;
+    padding: 20px;
+    border: 1px solid #8c8c8c;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+input#absender,
+textarea {
+    width: 250px;
+    border: 1px solid #8c8c8c;
+    margin-bottom: 1em;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #d9d9d9;
 
 }
+
+/* Ende Formular auf Seite Kontakt */
+
+
+
+
