@@ -105,7 +105,27 @@ p a{
 
 
 
+input[type="search"]:before {
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 18px/1 'Genericons';
+    content: '\f400';
+}
 
+
+.inputfield {
+    width: 200px;
+    border: 1px solid black;
+    background: #fff;
+    padding: 6px 6px 6px 36px;
+    margin: 0 auto;
+    display: inline;
+    margin-top: 15px;
+}
+.iconsidebar {
+    background: url("../bilder/search.png") no-repeat #fff 8px 8px;
+
+}
 
 
 

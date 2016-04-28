@@ -77,7 +77,7 @@ li#homelink a:before {
 
 
 li#vip a:before{
-    content: '\f100';
+    content: '\f101';
     font-family: Flaticon;
     color: red;
     font-size: 25px;
@@ -87,7 +87,7 @@ li#vip a:before{
 }
 
 li#fragez a:before {
-    content: '\f106';
+    content: '\f108';
     font-family: Flaticon;
     color: red;
     font-size: 25px;
@@ -96,7 +96,7 @@ li#fragez a:before {
 }
 
 li#brush a:before {
-    content: '\f101';
+    content: '\f102';
     font-family: Flaticon;
     color: red;
     font-size: 25px;
@@ -106,7 +106,7 @@ li#brush a:before {
 }
 
 li#fur a:before {
-    content: '\f104';
+    content: '\f105';
     font-family: Flaticon;
     color: red;
     font-size: 25px;
@@ -124,7 +124,7 @@ li#speak a:before {
 }
 
 li#gallery a:before {
-    content: '\f105';
+    content: '\f106';
     font-family: Flaticon;
     color: red;
     font-size: 25px;
@@ -133,7 +133,7 @@ li#gallery a:before {
 }
 
 li#descript a:before {
-    content: '\f103';
+    content: '\f104';
     font-family: Flaticon;
     color: red;
     font-size: 25px;
@@ -142,7 +142,7 @@ li#descript a:before {
 }
 
 li#contact a:before {
-    content: '\f102';
+    content: '\f103';
     font-family: Flaticon;
     color: red;
     font-size: 25px;
@@ -150,4 +150,11 @@ li#contact a:before {
     padding-left: 5px;
 }
 
+#suchfeld {
+
+}
+
+
 /* Ende Navigationsbereich */
+
+

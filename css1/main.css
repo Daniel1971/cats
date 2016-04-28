@@ -243,8 +243,9 @@ div.frontSide1 {
     border: 1px solid black;
 }
 
+/* Mindestgrösse für Bilder */
 
-img.card {
+img.card.frontSide {
     min-width: 200px;
 }
 
@@ -252,6 +253,10 @@ img.card {
 
 
 /* Beginn Formular auf Seite Kontakt */
+
+fieldset {
+    margin: 15px;
+}
 
 form {
     width: 300px;
