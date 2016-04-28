@@ -35,7 +35,6 @@ $(document).ready(function() {
                         $("#sprungziel").empty();
                         var auswahl = '<img src= "' + json.pictures[1].url + '" alt="' + json.pictures[1].alt + '" title="' + json.pictures[1].title + '">';
                         $("#sprungziel").append(auswahl);
-                        console.dir(this);
                         break;
                     case "bild3":
                         $("#sprungziel").empty();

@@ -5,13 +5,14 @@
 }
 
 html {
-    font-size: 100%;
+
 }
 
 body {
     background: url("../fabric_1/fabric_1_@2X.png");
     /* display: flex; */        /* Auswirkung bei Eventdelegation => Inhaltsbereich springt auf die linke Seite!" */
     overflow-y: scroll;
+    font-size: 100%;
 }
 
 #wrapper {
@@ -32,7 +33,7 @@ body {
 
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-family: Chalkboard;
 }
 

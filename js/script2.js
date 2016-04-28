@@ -141,6 +141,8 @@ $(document).ready(function() {
             /* Textbereich bei Klick auf Pfeilsymbol nach oben wieder schliessen */
 
             $(":button").on("click", "span.genericon.genericon-uparrow", function (event) {
+                console.log(this);
+                $("#sprungziel").empty();
                 $(this).removeClass("genericon genericon-uparrow");
                 $(this).addClass("genericon genericon-downarrow");
                 $("div.weiss").remove();
