@@ -390,6 +390,15 @@ $(document).ready(function() {
             $("#catsprungziel9").append('<img src="' + json.charaktere[8].url + '">');
             $("#titelausgabe9").append(json.charaktere[8].name);
             $("#textziel9").append(json.charaktere[8].text);
+            $("#catsprungziel10").append('<img src="' + json.charaktere[9].url + '">');
+            $("#titelausgabe10").append(json.charaktere[9].name);
+            $("#textziel10").append(json.charaktere[9].text);
+            $("#catsprungziel11").append('<img src="' + json.charaktere[10].url + '">');
+            $("#titelausgabe11").append(json.charaktere[10].name);
+            $("#textziel11").append(json.charaktere[10].text);
+            $("#catsprungziel12").append('<img src="' + json.charaktere[11].url + '">');
+            $("#titelausgabe12").append(json.charaktere[11].name);
+            $("#textziel12").append(json.charaktere[11].text);
 
 
         });

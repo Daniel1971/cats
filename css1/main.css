@@ -233,7 +233,8 @@ div.frontSide1 {
 
 #sprungziel1, #sprungziel2, #sprungziel3,
 #sprungziel4, #sprungziel5, #sprungziel6,
-#sprungziel7, #sprungziel8, #sprungziel9 {
+#sprungziel7, #sprungziel8, #sprungziel9,
+#sprungziel10, #sprungziel11, #sprungziel12 {
     background-color: greenyellow;          /* evtl. rot um den Unterschied besser hervorzuheben */
     width: 200px;
     height: 240px;
