@@ -127,8 +127,13 @@ ul.pagination li a.active {
     border-radius: 5px;
 }
 
-u.pagination li a:hover:not(.active) {
+ul.pagination li a:hover:not(.active) {
     background-color: #ddd;
+}
+
+ul.pagination li:first-of-type {
+
+
 }
 
 /* Ende Bereich Pagination */

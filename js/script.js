@@ -695,6 +695,8 @@ $(document).ready(function () {
                         $("#result").text("Points: " + counter);
                         $("#weiterz").attr("value", "Bewertung");
                         $("input#rb43").prop("checked", false );
+                        $("input#rb44").prop("checked", false );
+                        $("input#rb45").prop("checked", false );
                         var punkte = counter;
 
 
@@ -709,7 +711,6 @@ $(document).ready(function () {
                                     $("#weiterz").remove();
                                     break;
                                 case (counter > 15):
-                                    alert("Es geht!");
                                     $("#quizausgabe").empty();
                                     $("#quizausgabe").css("text-align", "center");
                                     $("#quizausgabe").text("Das ist gar nicht möglich!");
@@ -734,6 +735,7 @@ $(document).ready(function () {
 
 
                     }
+
 
 
 
