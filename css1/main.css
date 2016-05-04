@@ -35,6 +35,7 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 /* Beginn Knopfgestaltung */
@@ -290,6 +291,151 @@ audio {
     display: none;
 }
 
+
+.mainquiz {
+    display: flex;
+    justify-content: center;
+}
+
+.mainquiz h2 {
+}
+
+
+article#a2 form {
+    border: none;
+    background-color: khaki;
+}
+
+article#a2 form label {
+    display: inline;
+}
+
+article#a2 input {
+    margin: 10px;
+}
+
+article#a2 p {
+}
+
+
+
+
+
+ul.pagination2 {
+    -webkit-padding-start: 0px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul.pagination2 li{
+    display: inline;
+    padding: 0;
+
+}
+
+ul.pagination2 li a {
+    color: orange;
+    float: left;
+    padding: 6px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ul.pagination2 li a.active {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+}
+
+u.pagination2 li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+#quizfrnr {
+    display: inline-block;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#quizfr {
+    display: inline-block;
+    height: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    margin: 0 5px;
+
+}
+
+#frageblock {
+    background-color: orange;
+    text-align: center;
+    height: auto;
+}
+
+
+#sidebar3 {
+}
+
+.mainquiz {
+    flex: 8;
+}
+
+main article#a2 section form{
+    margin: 0 auto;
+}
+
+
+#quizausgabe {
+    width: auto;
+}
+
+
+
+#formquiz {
+    width: 800px;
+}
+
+
+article#a2 #weiterz {
+}
+
+#boxweiter {
+    display: flex;
+    justify-content: center;
+}
+
+#weiterz {
+    width: 100px;
+    text-align: center;
+}
+
+#boxresult {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    width: 100px;
+    height: 50px;
+    background-color: lightgrey;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+
+}
+
+#weiterbew {
+
+    background-color: red;
+}
 
 
 

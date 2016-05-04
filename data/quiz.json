@@ -1,0 +1,124 @@
+{
+  "fragen": [
+    {
+      "id": "1",
+      "frage": "Wie viele Leben hat eine Katze?",
+      "auswahl1": "Eins",
+      "auswahl2": "Neun",
+      "auswahl3": "Sieben",
+      "antwort": "Eins"
+    },
+    {
+      "id": "2",
+      "frage": "Die Augen von Katzen leuchten im Dunkeln, wenn Sie angestrahlt werden, weil ...",
+      "auswahl1": "... spezielle Leuchtorgane die Augen leuchten lassen.",
+      "auswahl2": "... eine Schicht hinter der Netzhaut die Lichtstrahlen reflektiert.",
+      "auswahl3": "... der Betrachter einer optischen Täuschung unterliegt.",
+      "antwort": "... eine Schicht hinter der Netzhaut die Lichtstrahlen reflektiert."
+    },
+    {
+      "id": "3",
+      "frage": "Die Zunge von Katzen ist rau, weil ...",
+      "auswahl1": "... sie damit die Hornhaut von ihren Füssen schaben kann.",
+      "auswahl2": "... die Zunge auch als Schöpfkelle beim Trinken verwendet wird.",
+      "auswahl3": "... sie einfach ist, wie sie ist.",
+      "antwort": "... die Zunge auch als Schöpfkelle beim Trinken verwendet wird."
+    },
+    {
+      "id": "4",
+      "frage": "Katzen und Hunde haben gemeinsam, dass ...",
+      "auswahl1": "... beide ihre Krallen einziehen können.",
+      "auswahl2": "... sie beide absolute Fleischfresser sind.",
+      "auswahl3": "... der Schwanz wichtiges Mittel zur Kommunikation ist.",
+      "antwort": "... der Schwanz wichtiges Mittel zur Kommunikation ist."
+    },
+    {
+      "id": "5",
+      "frage": "Welche Göttin wurde bei den Ägyptern als Katze dargestellt?",
+      "auswahl1": "Bastet",
+      "auswahl2": "Nut",
+      "auswahl3": "Seschat",
+      "antwort": "Bastet"
+    },
+    {
+      "id": "6",
+      "frage": "Wer ist die schnellste Katze der Welt?",
+      "auswahl1": "Der Panther",
+      "auswahl2": "Der Leopard",
+      "auswahl3": "Der Gepard",
+      "antwort": "Der Gepard"
+    },
+    {
+      "id": "7",
+      "frage": "Löwen ...",
+      "auswahl1": "... gibt es in Afrika und Indien.",
+      "auswahl2": "... sind alle Einzelgänger.",
+      "auswahl3": "... töten in Afrika die meisten Menschen.",
+      "antwort": "... gibt es in Afrika und Indien."
+    },
+    {
+      "id": "8",
+      "frage": "Viele Menschen sind gegen Katzen allergisch. Gegen was genau?",
+      "auswahl1": "Die Haare",
+      "auswahl2": "Spucke - und Hautpartikel",
+      "auswahl3": "Ohrenschmalz",
+      "antwort": "Spucke - und Hautpartikel"
+    },
+    {
+      "id": "9",
+      "frage": "Die normale Hauskatze hat eine Lebenserwartung von 10 bis 15 Jahren. Aber wie alt wurde die älteste Katze, die auch im Guiness Buch der Rekorde steht?",
+      "auswahl1": "19",
+      "auswahl2": "27",
+      "auswahl3": "31",
+      "antwort": "31"
+    },
+    {
+      "id": "10",
+      "frage": "Wer hat die empfindlichsten Ohren?",
+      "auswahl1": "Der Mensch",
+      "auswahl2": "Die Katze",
+      "auswahl3": "Der Hund",
+      "antwort": "Die Katze"
+    },
+    {
+      "id": "11",
+      "frage": "Katzen, die weiss, braun und schwarz gefleckt sind, ...",
+      "auswahl1": "... bringen Glück.",
+      "auswahl2": "... sind immer Weibchen.",
+      "auswahl3": "... sind immer Männchen.",
+      "antwort": "... sind immer Weibchen."
+    },
+    {
+      "id": "12",
+      "frage": "Katzen landen immer auf den Füssen, wenn sie fallen. Oder?",
+      "auswahl1": "Immer!",
+      "auswahl2": "Nur wenn sie aus einer Höhe von zwei bis drei Metern fallen und sich noch drehen können.",
+      "auswahl3": "Das ist ein Ammenmärchen und reiner Zufall.",
+      "antwort": "Nur wenn sie aus einer Höhe von zwei bis drei Metern fallen und sich noch drehen können."
+    },
+    {
+      "id": "13",
+      "frage": "'Bonsai Kitten', also Kätzchen, die Flaschenform haben, weil sie in Flaschen gross gezogen worden sind ...",
+      "auswahl1": "... eine absolute Tierquälerei.",
+      "auswahl2": "... ein Scherz, den sich Leute gemacht haben, der aber gar nicht stimmt.",
+      "auswahl3": "... eine platzsparende Art, eine Katze zu halten.",
+      "antwort": "... ein Scherz, den sich Leute gemacht haben, der aber gar nicht stimmt."
+    },
+    {
+      "id": "14",
+      "frage": "Wenn junge Katzen ihre Zähne verlieren, dann ...",
+      "auswahl1": "... muss dringend ihre Ernährung umgestellt werden.",
+      "auswahl2": "... verlieren sie ihre Milchzähne.",
+      "auswahl3": "... macht das nichts, weil die beliebig oft neue wachsen lassen können.",
+      "antwort": "... verlieren sie ihre Milchzähne."
+    },
+    {
+      "id": "15",
+      "frage": "Welche Katze ist die grösste?",
+      "auswahl1": "Der Tiger",
+      "auswahl2": "Der Löwe",
+      "auswahl3": "Der Puma",
+      "antwort": "Der Tiger"
+    }
+  ]
+}
