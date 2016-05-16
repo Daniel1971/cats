@@ -421,7 +421,17 @@ article#a2 #weiterz {
     text-align: center;
 }
 
+#naefrag {
+    width: 130px;
+    text-align: center;
+}
+
 #boxresult {
+    display: flex;
+    justify-content: center;
+}
+
+#boxmitteilung {
     display: flex;
     justify-content: center;
 }
@@ -435,6 +445,17 @@ article#a2 #weiterz {
     line-height: 50px;
     vertical-align: middle;
 
+}
+
+#mitteilung {
+    width: 200px;
+    height: 50px;
+    background-color: lightgrey;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    margin: 10px;
 }
 
 #weiterbew {

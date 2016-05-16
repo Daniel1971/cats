@@ -412,6 +412,9 @@ $(document).ready(function () {
 
 
             });
+            
+            
+          ;
 
 
 
@@ -429,6 +432,11 @@ $(document).ready(function () {
             $("input#rb2").attr('value', json.fragen[0].auswahl2);
             $("#quizausgabe").prepend("<input type='radio' id='rb3' name='rbgroup1'>" + json.fragen[0].auswahl3 + "<br>");
             $("input#rb3").attr('value', json.fragen[0].auswahl3);
+            $("#naefrag").hide();
+            $("#result").hide();
+
+
+
 
 
             $("#weiterz").on("click", function () {
@@ -436,6 +444,8 @@ $(document).ready(function () {
                 if ($(":input").is(":checked")) {
 
                     var auswahl1 = $(":input:checked");
+
+                    console.dir(auswahl1);
 
                     function blaettern1 () {
 
@@ -451,9 +461,13 @@ $(document).ready(function () {
                         $("input#rb5").attr('value', json.fragen[1].auswahl2);
                         $("#quizausgabe").prepend("<input type='radio' id='rb6' name='rbgroup2'>" + json.fragen[1].auswahl3 + "<br>");
                         $("input#rb6").attr('value', json.fragen[1].auswahl3);
+                        $("#quizausgabe").css({"text-align" : "left", "font-size" : "15px"});       /* Warum nur 1x nötig? */
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt2 a").addClass("active");
                     }
+
 
                     function blaettern2 () {
 
@@ -463,15 +477,19 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[2].id + ":");
                         $("#quizfr").append(json.fragen[2].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb7' name='rbgroup2' checked>" + json.fragen[2].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb7' name='rbgroup3' checked>" + json.fragen[2].auswahl1 + "<br>");
                         $("input#rb7").attr('value', json.fragen[2].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb8' name='rbgroup2'>" + json.fragen[2].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb8' name='rbgroup3'>" + json.fragen[2].auswahl2 + "<br>");
                         $("input#rb8").attr('value', json.fragen[2].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb9' name='rbgroup2'>" + json.fragen[2].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb9' name='rbgroup3'>" + json.fragen[2].auswahl3 + "<br>");
                         $("input#rb9").attr('value', json.fragen[2].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt3 a").addClass("active");
                     }
+
+
 
                     function blaettern3 () {
 
@@ -481,12 +499,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[3].id + ":");
                         $("#quizfr").append(json.fragen[3].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb10' name='rbgroup2' checked>" + json.fragen[3].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb10' name='rbgroup4' checked>" + json.fragen[3].auswahl1 + "<br>");
                         $("input#rb10").attr('value', json.fragen[3].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb11' name='rbgroup2'>" + json.fragen[3].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb11' name='rbgroup4'>" + json.fragen[3].auswahl2 + "<br>");
                         $("input#rb11").attr('value', json.fragen[3].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb12' name='rbgroup2'>" + json.fragen[3].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb12' name='rbgroup4'>" + json.fragen[3].auswahl3 + "<br>");
                         $("input#rb12").attr('value', json.fragen[3].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt4 a").addClass("active");
                     }
@@ -499,12 +519,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[4].id + ":");
                         $("#quizfr").append(json.fragen[4].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb13' name='rbgroup2' checked>" + json.fragen[4].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb13' name='rbgroup5' checked>" + json.fragen[4].auswahl1 + "<br>");
                         $("input#rb13").attr('value', json.fragen[4].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb14' name='rbgroup2'>" + json.fragen[4].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb14' name='rbgroup5'>" + json.fragen[4].auswahl2 + "<br>");
                         $("input#rb14").attr('value', json.fragen[4].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb15' name='rbgroup2'>" + json.fragen[4].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb15' name='rbgroup5'>" + json.fragen[4].auswahl3 + "<br>");
                         $("input#rb15").attr('value', json.fragen[4].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt5 a").addClass("active");
                     }
@@ -517,12 +539,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[5].id + ":");
                         $("#quizfr").append(json.fragen[5].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb16' name='rbgroup2' checked>" + json.fragen[5].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb16' name='rbgroup6' checked>" + json.fragen[5].auswahl1 + "<br>");
                         $("input#rb16").attr('value', json.fragen[5].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb17' name='rbgroup2'>" + json.fragen[5].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb17' name='rbgroup6'>" + json.fragen[5].auswahl2 + "<br>");
                         $("input#rb17").attr('value', json.fragen[5].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb18' name='rbgroup2'>" + json.fragen[5].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb18' name='rbgroup6'>" + json.fragen[5].auswahl3 + "<br>");
                         $("input#rb18").attr('value', json.fragen[5].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt6 a").addClass("active");
                     }
@@ -535,12 +559,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[6].id + ":");
                         $("#quizfr").append(json.fragen[6].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb19' name='rbgroup2' checked>" + json.fragen[6].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb19' name='rbgroup7' checked>" + json.fragen[6].auswahl1 + "<br>");
                         $("input#rb19").attr('value', json.fragen[6].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb20' name='rbgroup2'>" + json.fragen[6].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb20' name='rbgroup7'>" + json.fragen[6].auswahl2 + "<br>");
                         $("input#rb20").attr('value', json.fragen[6].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb21' name='rbgroup2'>" + json.fragen[6].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb21' name='rbgroup7'>" + json.fragen[6].auswahl3 + "<br>");
                         $("input#rb21").attr('value', json.fragen[6].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt7 a").addClass("active");
                     }
@@ -553,12 +579,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[7].id + ":");
                         $("#quizfr").append(json.fragen[7].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb22' name='rbgroup2' checked>" + json.fragen[7].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb22' name='rbgroup8' checked>" + json.fragen[7].auswahl1 + "<br>");
                         $("input#rb22").attr('value', json.fragen[7].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb23' name='rbgroup2'>" + json.fragen[7].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb23' name='rbgroup8'>" + json.fragen[7].auswahl2 + "<br>");
                         $("input#rb23").attr('value', json.fragen[7].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb24' name='rbgroup2'>" + json.fragen[7].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb24' name='rbgroup8'>" + json.fragen[7].auswahl3 + "<br>");
                         $("input#rb24").attr('value', json.fragen[7].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt8 a").addClass("active");
                     }
@@ -571,12 +599,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[8].id + ":");
                         $("#quizfr").append(json.fragen[8].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb25' name='rbgroup2' checked>" + json.fragen[8].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb25' name='rbgroup9' checked>" + json.fragen[8].auswahl1 + "<br>");
                         $("input#rb25").attr('value', json.fragen[8].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb26' name='rbgroup2'>" + json.fragen[8].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb26' name='rbgroup9'>" + json.fragen[8].auswahl2 + "<br>");
                         $("input#rb26").attr('value', json.fragen[8].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb27' name='rbgroup2'>" + json.fragen[8].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb27' name='rbgroup9'>" + json.fragen[8].auswahl3 + "<br>");
                         $("input#rb27").attr('value', json.fragen[8].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt9 a").addClass("active");
                     }
@@ -589,12 +619,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[9].id + ":");
                         $("#quizfr").append(json.fragen[9].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb28' name='rbgroup2' checked>" + json.fragen[9].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb28' name='rbgroup10' checked>" + json.fragen[9].auswahl1 + "<br>");
                         $("input#rb28").attr('value', json.fragen[9].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb29' name='rbgroup2'>" + json.fragen[9].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb29' name='rbgroup10'>" + json.fragen[9].auswahl2 + "<br>");
                         $("input#rb29").attr('value', json.fragen[9].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb30' name='rbgroup2'>" + json.fragen[9].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb30' name='rbgroup10'>" + json.fragen[9].auswahl3 + "<br>");
                         $("input#rb30").attr('value', json.fragen[9].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt10 a").addClass("active");
                     }
@@ -607,12 +639,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[10].id + ":");
                         $("#quizfr").append(json.fragen[10].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb31' name='rbgroup2' checked>" + json.fragen[10].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb31' name='rbgroup11' checked>" + json.fragen[10].auswahl1 + "<br>");
                         $("input#rb31").attr('value', json.fragen[10].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb32' name='rbgroup2'>" + json.fragen[10].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb32' name='rbgroup11'>" + json.fragen[10].auswahl2 + "<br>");
                         $("input#rb32").attr('value', json.fragen[10].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb33' name='rbgroup2'>" + json.fragen[10].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb33' name='rbgroup11'>" + json.fragen[10].auswahl3 + "<br>");
                         $("input#rb33").attr('value', json.fragen[10].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt11 a").addClass("active");
                     }
@@ -625,12 +659,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[11].id + ":");
                         $("#quizfr").append(json.fragen[11].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb34' name='rbgroup2' checked>" + json.fragen[11].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb34' name='rbgroup12' checked>" + json.fragen[11].auswahl1 + "<br>");
                         $("input#rb34").attr('value', json.fragen[11].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb35' name='rbgroup2'>" + json.fragen[11].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb35' name='rbgroup12'>" + json.fragen[11].auswahl2 + "<br>");
                         $("input#rb35").attr('value', json.fragen[11].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb36' name='rbgroup2'>" + json.fragen[11].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb36' name='rbgroup12'>" + json.fragen[11].auswahl3 + "<br>");
                         $("input#rb36").attr('value', json.fragen[11].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt12 a").addClass("active");
                     }
@@ -643,12 +679,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[12].id + ":");
                         $("#quizfr").append(json.fragen[12].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb37' name='rbgroup2' checked>" + json.fragen[12].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb37' name='rbgroup13' checked>" + json.fragen[12].auswahl1 + "<br>");
                         $("input#rb37").attr('value', json.fragen[12].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb38' name='rbgroup2'>" + json.fragen[12].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb38' name='rbgroup13'>" + json.fragen[12].auswahl2 + "<br>");
                         $("input#rb38").attr('value', json.fragen[12].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb39' name='rbgroup2'>" + json.fragen[12].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb39' name='rbgroup13'>" + json.fragen[12].auswahl3 + "<br>");
                         $("input#rb39").attr('value', json.fragen[12].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt13 a").addClass("active");
                     }
@@ -661,12 +699,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[13].id + ":");
                         $("#quizfr").append(json.fragen[13].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb40' name='rbgroup2' checked>" + json.fragen[13].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb40' name='rbgroup14' checked>" + json.fragen[13].auswahl1 + "<br>");
                         $("input#rb40").attr('value', json.fragen[13].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb41' name='rbgroup2'>" + json.fragen[13].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb41' name='rbgroup14'>" + json.fragen[13].auswahl2 + "<br>");
                         $("input#rb41").attr('value', json.fragen[13].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb42' name='rbgroup2'>" + json.fragen[13].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb42' name='rbgroup14'>" + json.fragen[13].auswahl3 + "<br>");
                         $("input#rb42").attr('value', json.fragen[13].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt14 a").addClass("active");
                     }
@@ -680,12 +720,14 @@ $(document).ready(function () {
                         $("#quizausgabe").empty();
                         $("#quizfrnr").append("Frage " + json.fragen[14].id + ":");
                         $("#quizfr").append(json.fragen[14].frage);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb43' name='rbgroup2' checked>" + json.fragen[14].auswahl1 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb43' name='rbgroup15' checked>" + json.fragen[14].auswahl1 + "<br>");
                         $("input#rb43").attr('value', json.fragen[14].auswahl1);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb44' name='rbgroup2'>" + json.fragen[14].auswahl2 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb44' name='rbgroup15'>" + json.fragen[14].auswahl2 + "<br>");
                         $("input#rb44").attr('value', json.fragen[14].auswahl2);
-                        $("#quizausgabe").prepend("<input type='radio' id='rb45' name='rbgroup2'>" + json.fragen[14].auswahl3 + "<br>");
+                        $("#quizausgabe").prepend("<input type='radio' id='rb45' name='rbgroup15'>" + json.fragen[14].auswahl3 + "<br>");
                         $("input#rb45").attr('value', json.fragen[14].auswahl3);
+                        $("#naefrag").hide();
+                        $("#weiterz").show();
                         $("li a").removeClass("active");
                         $("li#quizbt15 a").addClass("active");
                     }
@@ -693,7 +735,6 @@ $(document).ready(function () {
                     function blaettern15 () {
 
                         $("#result").text("Points: " + counter);
-                        $("#weiterz").attr("value", "Bewertung");
                         $("input#rb43").prop("checked", false );
                         $("input#rb44").prop("checked", false );
                         $("input#rb45").prop("checked", false );
@@ -701,7 +742,7 @@ $(document).ready(function () {
 
 
 
-                        $("#weiterz").on("click", function () {
+
 
                             switch (true) {
                                 case (counter === 15):
@@ -730,7 +771,7 @@ $(document).ready(function () {
 
                             }
 
-                        });
+
 
 
 
@@ -745,140 +786,443 @@ $(document).ready(function () {
                     switch (auswahl1[0].id) {
                         case "rb1":
                             counter += 1;
-                            blaettern1();
+                            $("#result").text("Points: " + counter);
+                            $("#result").show();
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                               blaettern1();
+                               $("#mitteilung").empty();
+                            });
                             break;
                         case "rb2":
                         case "rb3":
-                            blaettern1();
+                            $("#result").text("Points: " + counter);
+                            $("#result").show();
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern1();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb4":
                             counter += 1;
-                            blaettern2();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern2();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb5":
                         case "rb6":
-                            blaettern2();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern2();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb7":
-                            blaettern3();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern3();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb8":
                             counter += 1;
-                            blaettern3();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern3();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb9":
-                            blaettern3();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern3();
+                                $("#mitteilung").empty();
+                            });
                             break;
-
                         case "rb10":
                         case "rb11":
-                            blaettern4();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern4();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb12":
                             counter +=1;
-                            blaettern4();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern4();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb13":
                             counter += 1;
-                            blaettern5();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern5();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb14":
                         case "rb15":
-                            blaettern5();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern5();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb16":
                         case "rb17":
-                            blaettern6();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern6();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb18":
                             counter += 1;
-                            blaettern6();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern6();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb19":
                             counter += 1;
-                            blaettern7();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern7();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb20":
                         case "rb21":
-                            blaettern7();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern7();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb22":
-                            blaettern8();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern8();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb23":
                             counter += 1;
-                            blaettern8();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern8();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb24":
-                            blaettern8();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern8();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb25":
                         case "rb26":
-                            blaettern9();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern9();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb27":
                             counter += 1;
-                            blaettern9();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern9();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb28":
-                            blaettern10();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern10();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb29":
                             counter += 1;
-                            blaettern10();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern10();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb30":
-                            blaettern10();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern10();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb31":
-                            blaettern11();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern11();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb32":
                             counter += 1;
-                            blaettern11();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern11();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb33":
-                            blaettern11();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern11();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb34":
-                            blaettern12();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern12();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb35":
                             counter += 1;
-                            blaettern12();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern12();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb36":
-                            blaettern12();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern12();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb37":
-                            blaettern13();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern13();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb38":
                             counter += 1;
-                            blaettern13();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern13();
+                                $("#mitteilung").empty();
+
+                            });
                             break;
                         case "rb39":
-                            blaettern13();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern13();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb40":
-                            blaettern14();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern14();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb41":
                             counter += 1;
-                            blaettern14();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern14();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb42":
-                            blaettern14();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").hide();
+                            $("#naefrag").show();
+                            $("#naefrag").on("click", function () {
+                                blaettern14();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb43":
                             counter += 1;
-                            blaettern15();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Richtige Wahl!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").attr("value", "Einstufung");
+                            $("#weiterz").on("click", function () {
+                                blaettern15();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb44":
-                            blaettern15();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").attr("value", "Einstufung");
+                            $("#weiterz").on("click", function () {
+                                blaettern15();
+                                $("#mitteilung").empty();
+                            });
                             break;
                         case "rb45":
-                            blaettern15();
+                            $("#result").text("Points: " + counter);
+                            $("#quizausgabe").text("Leider falsch!").css({"text-align" : "center", "font-size" : "30px"});
+                            $(":input").prop("checked", false );
+                            $("#weiterz").attr("value", "Einstufung");
+                            $("#weiterz").on("click", function () {
+                                blaettern15();
+                                $("#mitteilung").empty();
+                            });
                             break;
 
 
@@ -951,6 +1295,28 @@ $(document).ready(function () {
 
 
     frageAusgabe();
+
+
+/*
+    function startTime () {
+
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('test').innerHTML =
+            h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+
+    function checkTime (i) {
+        if (i < 10) {i = "0" + i};
+        return i;
+    }
+
+    startTime(); */
 
 
 
